@@ -7,7 +7,7 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const path = require('path');
 const multer = require('multer');
-const PORT = process.env.port || 5000;
+const PORT = process.env.PORT || 5000;
 
 dotenv.config();
 app.use(bodyParser.json());
