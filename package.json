@@ -4,18 +4,19 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "webidl-conversions": "^3.0.1",
     "node-fetch": "^2.6.7",
     "tr46": "^0.0.3",
     "true-myth": "^2.2.8",
+    "webidl-conversions": "^3.0.1",
     "whatwg-url": "^5.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^7.2.2"
+  },
   "scripts": {
     "frontend": "cd frontend && npm start",
     "backend": "cd backend && npm start",
-    "start": "npm run backend && npm run frontend",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "repository": {
     "type": "git",
