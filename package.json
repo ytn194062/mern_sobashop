@@ -12,7 +12,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node index.js",
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && npm start",
+    "start": "frontend && backend",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
